@@ -1,122 +1,153 @@
 <!DOCTYPE html>
-<html lang="uk">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vladyslav Fetsyukh - Portfolio CV</title>
+    <meta name="description" content="Portfolio and CV of Vladyslav Fetsyukh, Junior Frontend Developer">
+    <title>Vladyslav Fetsyukh | Frontend Developer</title>
 </head>
 <body>
 
-    <header>
-    
-    <h1>Vladyslav Fetsyukh</h1>
-    <p><strong>Junior Frontend Developer & Cybersecurity Student</strong></p>
-    <div>
-        <img src="img/my-photo.jpg" alt="Vladyslav Fetsyukh - Junior Frontend Developer" width="200">
+    <div class="resume-wrapper">
+
+        <header class="header">
+            <div class="header__photo">
+                <img src="img/my-photo.jpg" alt="Vladyslav Fetsyukh Photo" width="150" class="photo">
+            </div>
+            <div class="header__info">
+                <h1 class="header__name">Vladyslav Fetsyukh</h1>
+                <p class="header__title"><strong>Junior Frontend Developer & Cybersecurity Student</strong></p>
+            </div>
+            
+            <nav class="header__nav">
+                <p>
+                    <a href="#profile">Profile</a> | 
+                    <a href="#experience">Experience</a> | 
+                    <a href="#skills">Skills</a> | 
+                    <a href="#contact">Contact</a>
+                </p>
+            </nav>
+            <hr>
+        </header>
+
+        <div class="content-wrapper">
+            
+            <aside class="sidebar">
+                <section class="sidebar__section">
+                    <h2>Personal details</h2>
+                    <ul class="contact-list">
+                        <li>📧 <a href="mailto:vladfecuh@gmail.com">vladfecuh@gmail.com</a></li>
+                        <li>📞 +380960985063</li>
+                        <li>📍 Lviv, Ukraine</li>
+                        <li>💻 <a href="https://github.com/Konsigen" target="_blank">github.com/Konsigen</a></li>
+                    </ul>
+                </section>
+
+                <section class="sidebar__section">
+                    <h2>Languages</h2>
+                    <ul class="languages-list">
+                        <li>English <meter value="4" min="0" max="5" title="4 out of 5">4/5</meter></li>
+                        <li>Ukrainian <meter value="5" min="0" max="5" title="5 out of 5">5/5</meter></li>
+                    </ul>
+                </section>
+            </aside>
+
+            <main class="main-content">
+                
+                <section id="profile" class="section">
+                    <h2>Profile</h2>
+                    <p>
+                        Motivated <strong>Junior Frontend Developer</strong> and <strong>Cybersecurity student</strong> at Lviv Polytechnic. 
+                        I specialize in creating responsive, user-friendly web interfaces with a strong focus on code security and performance.
+                    </p>
+                </section>
+
+                <section id="education" class="section">
+                    <h2>Education</h2>
+                    <article class="card">
+                        <h3>Bachelor of Cybersecurity</h3>
+                        <p>Lviv Polytechnic National University</p>
+                        <p><small><time datetime="2024-09">Sep 2024</time> - <time datetime="2028-06">Jun 2028</time></small></p>
+                    </article>
+                </section>
+
+                <section id="experience" class="section">
+                    <h2>Employment</h2>
+                    <article class="card">
+                        <h3>Freelance Frontend Developer</h3>
+                        <p><em>Self-employed</em> | <small><time datetime="2023-01">Jan 2023</time> - Present</small></p>
+                        <ul>
+                            <li><strong>Project Analysis & Planning:</strong> Conducted detailed discovery phases for client requests.</li>
+                            <li><strong>Frontend Architecture:</strong> Developed responsive apps using HTML5, CSS3, JS.</li>
+                            <li><strong>Security-First Coding:</strong> Implemented secure practices like input sanitization.</li>
+                        </ul>
+                    </article>
+                </section>
+
+                <section id="skills" class="section">
+                    <h2>Skills</h2>
+                    <table border="1" class="skills-table" width="100%">
+                        <thead>
+                            <tr>
+                                <th>Category</th>
+                                <th>Technologies</th>
+                                <th>Level</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Frontend</strong></td>
+                                <td>HTML5, CSS3 (Flexbox/Grid), Responsive Design</td>
+                                <td><meter value="4.5" min="0" max="5">4.5/5</meter></td>
+                            </tr>
+                            <tr>
+                                <td><strong>JavaScript</strong></td>
+                                <td>ES6+</td>
+                                <td><meter value="3.5" min="0" max="5">3.5/5</meter></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Tools</strong></td>
+                                <td>Bootstrap, Docker, Git/GitHub</td>
+                                <td><meter value="4" min="0" max="5">4/5</meter></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+
+                <section id="contact" class="section">
+                    <h2>Hire Me / Contact</h2>
+                    <form action="#" method="POST" class="contact-form">
+                        <fieldset>
+                            <legend>Send a message</legend>
+                            <div class="form-group">
+                                <label for="userName">Name:</label><br>
+                                <input type="text" id="userName" name="name" placeholder="John Doe" required>
+                            </div>
+                            <br>
+                            <div class="form-group">
+                                <label for="userEmail">Email:</label><br>
+                                <input type="email" id="userEmail" name="email" placeholder="john@example.com" required>
+                            </div>
+                            <br>
+                            <div class="form-group">
+                                <label for="message">Message:</label><br>
+                                <textarea id="message" name="message" rows="4" cols="40" required></textarea>
+                            </div>
+                            <br>
+                            <button type="submit" class="btn-submit">Send</button>
+                        </fieldset>
+                    </form>
+                </section>
+
+            </main>
+        </div>
+
+        <footer class="footer">
+            <hr>
+            <p align="center"><small>&copy; 2026 Vladyslav Fetsyukh. Built with pure HTML for Lab №2.</small></p>
+        </footer>
+
     </div>
-    <hr>
-</header>
-
-    <main>
-        <aside>
-            <h2>Personal details</h2>
-            <ul>
-                <li><strong>Email:</strong> <a href="mailto:vladfecuh@gmail.com">vladfecuh@gmail.com</a></li>
-                <li><strong>Phone:</strong> +380960985063</li>
-                <li><strong>Location:</strong> Lviv, Ukraine</li>
-                <li><strong>GitHub:</strong> <a href="https://github.com/Konsigen" target="_blank">github.com/Konsigen</a></li>
-            </ul>
-        </aside>
-
-        <section>
-            <h2>Profile</h2>
-            <p>
-                Motivated <strong>Junior Frontend Developer</strong> and <strong>Cybersecurity student</strong> at Lviv Polytechnic. 
-                I specialize in creating responsive, user-friendly web interfaces with a strong focus on code security and performance.
-            </p>
-        </section>
-
-        <section>
-            <h2>Education</h2>
-            <p><strong>Bachelor of Cybersecurity</strong> | Lviv Polytechnic National University</p>
-            <p><small>Sep 2024 - Jun 2028</small></p>
-        </section>
-
-        <section>
-            <h2>Employment</h2>
-            <h3>Freelance Frontend Developer (Self-employed)</h3>
-            <p><em>Jan 2023 - Present</em></p>
-            <ul>
-                <li><strong>Project Analysis & Planning:</strong> Conducted detailed discovery phases for client requests.</li>
-                <li><strong>Frontend Architecture:</strong> Developed and maintained responsive web applications using modern HTML5, CSS3, and JavaScript.</li>
-                <li><strong>Performance Optimization:</strong> Optimized web assets and code structure to reduce load times.</li>
-                <li><strong>Security-First Coding:</strong> Leveraging background in Cybersecurity to implement secure frontend practices (e.g., input sanitization).</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>Skills</h2>
-            <table border="1">
-                <thead>
-                    <tr>
-                        <th>Category</th>
-                        <th>Technologies</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Frontend</td>
-                        <td>HTML5, CSS3 (Flexbox/Grid), Responsive Design</td>
-                    </tr>
-                    <tr>
-                        <td>Databases</td>
-                        <td>MySQL</td>
-                    </tr>
-                    <tr>
-                        <td>Tools</td>
-                        <td>Bootstrap, Docker, Git/GitHub</td>
-                    </tr>
-                    <tr>
-                        <td>Languages</td>
-                        <td>English, Ukrainian</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-
-        <section>
-            <h2>Certificates</h2>
-            <p><strong>WEB Developer: From Zero to Result | Udemy</strong> (Dec 2022)</p>
-            <ul>
-                <li>Comprehensive study of modern web development focusing on <strong>HTML5 and CSS3</strong>.</li>
-                <li>Mastered advanced layout techniques including Flexbox and CSS Grid.</li>
-            </ul>
-        </section>
-
-        <section id="contact">
-            <h2>Contact Me</h2>
-            <form action="#" method="POST">
-                <p>
-                    <label for="name">Name:</label><br>
-                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
-                </p>
-                <p>
-                    <label for="email">Email:</label><br>
-                    <input type="email" id="email" name="email" placeholder="vlad@example.com" required>
-                </p>
-                <p>
-                    <label for="msg">Message:</label><br>
-                    <textarea id="msg" name="message" rows="4" placeholder="How can I help you?"></textarea>
-                </p>
-                <button type="submit">Send Message</button>
-            </form>
-        </section>
-    </main>
-
-    <footer>
-        <hr>
-        <p>&copy; 2026 Vladyslav Fetsyukh. All rights reserved. | Lab Work №2</p>
-    </footer>
 
 </body>
 </html>
